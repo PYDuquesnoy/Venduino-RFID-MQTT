@@ -1,4 +1,4 @@
-# Venduino-RFID-MQTT
+﻿# Venduino-RFID-MQTT
 Connected Arduino Vending Machine with payment by RFID cards checked against an InterSystems Caché DB.
 
 The system is composed of 3 connected parts:
@@ -8,20 +8,20 @@ The system is composed of 3 connected parts:
 
 ## Vending Machine
 
-This original Venduino Vending machine by Ryan Bates (http://www.retrobuiltgames.com/diy-kits-shop/venduino/) is outfitted with aditional components:
-The Arduino Uno is replaced with a Arduino AT Mega 2560
+The original Venduino Vending machine by Ryan Bates (http://www.retrobuiltgames.com/diy-kits-shop/venduino/) is outfitted with aditional components:
+ *  The Arduino Uno is replaced with a Arduino AT Mega 2560
  *  An Ethernet Shield is mounted on top of the AT Mega
  *  An MFRC-522 RFID Reader is mounted at the back of the coin slot. The coin slot is hidden with Company Logo Sticker
  *  An RGB Led is mounted in the LED hole on the front panel.
  *  The servos are Futaba S3003 transformed as continuous rotation.
  *  The power is supplied through the USB input, using a USB "battery pack".
- *  
- *  The Venduino RFID-MQTT connects through an MQTT Broker to an InterSystems Ensemble server that 
- *    - contains the RFID Card details (CardHolder Name and Card Balance)
- *    - stores all transactions
- *    - allows to centrally manage the pricing of the Venduino-RFID-MQTT
- *    
- *   Before deploying this code, the Server IP Address needs to be changed
+
+The Venduino RFID-MQTT connects through an MQTT Broker to an InterSystems Ensemble server that 
+  - contains the RFID Card details (CardHolder Name and Card Balance)
+  - stores all transactions
+  - allows to centrally manage the pricing of the Venduino-RFID-MQTT
+  
+Note: Before deploying this code, the Server IP Address needs to be changed
  
  ## MQTT Broker
  
